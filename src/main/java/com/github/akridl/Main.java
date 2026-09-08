@@ -3,6 +3,7 @@ package com.github.akridl;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello there!");
+        final Greeter greeter = new GreeterImpl();
+        System.out.println(greeter.greet(null));
     }
 }
